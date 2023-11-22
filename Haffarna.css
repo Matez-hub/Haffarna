@@ -1,0 +1,217 @@
+
+body{
+  font-family: 400, Arial;
+  margin-bottom: 2000px;
+}
+
+.headbar{
+  display: flex;
+  flex-direction: row;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(234, 234, 234);
+  height:55px;
+  
+}
+
+.head-text{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 20px;
+  white-space: nowrap;
+  column-gap: 20px;
+}
+
+.middle{
+  display: flex;
+  flex-direction: row;
+  position:absolute
+}
+
+.magnifier{
+  position: absolute;
+  height: 48px;
+  margin-top: 201px;
+  border-radius: 50px;
+  z-index: 1;
+  align-items: center;
+  padding-left: 1px;
+}
+
+
+.wallpaper{
+  position:relative;
+  display: flex;
+  flex:1;
+  margin-left: -15px;
+  margin-right:-15px;
+  min-width: 700px;
+}
+
+.searchbar{
+  width: 700px;
+  display: flex;
+  margin-top: 200px;
+  height:30px;
+  padding-left:60px;
+  border-radius: 60px;
+  position: relative;
+  border-width: 0px;
+}
+
+
+.searchbar:hover{
+  background-color: rgb(250, 247, 247);
+}
+
+.searchbar::placeholder{
+  color: black;
+
+}
+
+@media(max-width:750px) {
+  .searchbar{
+    width: 300px;
+    margin-top: 100px;
+  }
+  .magnifier{
+    margin-top: 100px;
+    height:30px;
+  }
+}
+
+
+@media(min-width:751px) {
+  .searchbar{
+    width: 700px;
+    margin-top: 200px;
+    height: 50px;
+  }
+}
+
+@media(max-width: 600px) {
+  .head-text{
+    margin-left: 70px;
+  }
+}
+
+.searching{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+}
+
+.logo{
+  object-fit: cover;
+  height:50px;
+}
+
+.logo-button{
+  background-color: white;
+  border:none;
+  position: relative;
+  
+}
+
+.logo-button:hover{
+  opacity:1;
+
+}
+
+.tooltip{
+  color: black;
+}
+
+.logo-button .tooltip{
+  z-index:2;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo-button:hover .tooltip{
+  z-index:10;
+  opacity: 1;
+  color: red;
+}
+
+
+
+.button_1 {
+  border: none;
+  background-color: white;
+
+}
+.button_2 {
+  border: none;
+  background-color: white;
+
+}
+.button_3 {
+  border: none;
+  background-color: white;
+
+}
+.button_4 {
+  border: none;
+  background-color: white;
+
+}
+.button_5 {
+  border: none;
+  background-color: white;
+
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
+/*Bottom css*/
+
+.bottom{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(213, 209, 209);
+  border-bottom-style: solid;
+  align-items: center;
+  height: 410px;
+  
+}
+
+.mop{
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+}
+
+.cat{
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+
+}
+
+.bottom_text{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+}
